@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Peak Pomodoro Timer</title>
         <link rel="preconnect" href="https://googleapis.com">
         <link rel="preconnect" href="https://gstatic.com" crossorigin>
         <link href="https://googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -18,12 +21,15 @@
             <div class="timer">
                 <div class="controls">
                     <ul class="controls-list">
-                        <li><button id="start">Start</button></li>
-                        <li><button id="pause">Pause</button></li>
+                        <li><button id="start" type="button">Start</button></li>
+                        <li><button id="pause" type="button" disabled>Pause</button></li>
                         <li><button id="reset">Reset</button></li>
                     </ul>
                 </div>
-                <h1>00:00</h1>
+                <h2 id="phase" aria-live="polite">Work</h2>
+                <h1 id="timer-display" role="timer" aria-label="Time remaining">25:00</h1>
+                <p id="timer-status" role="status" aria-live="polite"></p>
+                <progress id="timer-progress" class="timer-progress" value="100" max="100"></progress>
                 <div class="settings">
                     <ul class="settings-list">
                         <li>

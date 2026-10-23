@@ -130,6 +130,34 @@ button {
 .timer h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 5em;
+    margin: 10px 0;
+}
+
+.timer h2 {
+    margin: 20px 0 0;
+}
+
+#timer-status {
+  min-height: 1.5em;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .settings-list li {
+    margin: 8px;
+  }
+
+  .timer h1 {
+    font-size: 4em;
+  }
 }
 
 .tips {
@@ -139,4 +167,21 @@ button {
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timer-progress {
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  appearance: none;
+}
+
+.timer-progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+}
+
+.timer-progress::-webkit-progress-value {
+  background-color: #790000;
+  transition: width 1s linear; 
 }
