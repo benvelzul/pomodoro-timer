@@ -11,5 +11,8 @@ im using:
 
 and thats all
 
-## what it could be
-i could add more features like study tips or smth like that 
+## other features
+
+- u can change the intervals
+- there is a progress bar
+- it has study tips (not only study but about everything) 
