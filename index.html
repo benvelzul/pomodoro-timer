@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="title">
+            <h1>PEAK pomodoro timer</h1>
+        </div>
+        <div class="tips">
+            <h3 class="tips-text">peak tip</h3>
+            <button id="refresh">↻</button>
+        </div>
+        <div>
+            <div class="timer">
+                <div class="controls">
+                    <ul class="controls-list">
+                        <li><button id="start">Start</button></li>
+                        <li><button id="pause">Pause</button></li>
+                        <li><button id="reset">Reset</button></li>
+                    </ul>
+                </div>
+                <h1>00:00</h1>
+                <div class="settings">
+                    <ul class="settings-list">
+                        <li>
+                            <label for="work">Work</label>
+                            <input type="number" id="work" name="work" min="1" max="60" value="25">
+                        </li>
+                        <li>
+                            <label for="short-break">Short Break</label>
+                            <input type="number" id="short-break" name="short-break" min="1" max="15" value="5">
+                        </li>
+                        <li>
+                            <label for="long-break">Long Break</label>
+                            <input type="number" id="long-break" name="long-break" min="1" max="30" value="15">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

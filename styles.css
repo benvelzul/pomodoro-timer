@@ -1,0 +1,142 @@
+body {
+    background-color: #965b5b;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+input[type="number"] {
+  width: 70px; 
+  padding: 8px;
+  font-size: 20px;  
+  font-family: "Bebas Neue", sans-serif; 
+  color: #965b5b;
+  background-color: #ffffff;
+  border: 2px solid #ec8686; 
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  text-align: center;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+
+input[type="number"]:hover {
+  border-color: #965b5b;
+}
+
+input[type="number"]:focus {
+  border-color: #965b5b;
+  box-shadow: 0 0 0 3px rgba(150, 91, 91, 0.2);
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.settings {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ffb0b0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: inline-block;
+  position: relative;
+}
+
+.settings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-list li {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px; 
+  gap: 5px;       
+  color: #fff;    
+  font-size: 1.2em;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ffbbbb;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.controls-list li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  
+  background-color: #ff4949;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  padding: 12px 24px;
+  border-radius: 8px;
+
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.2), 0 2px 4px -2px rgba(99, 102, 241, 0.2);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.controls-list button:hover {
+  background-color: #4f46e5; 
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+}
+
+.controls-list button:active {
+  transform: translateY(0); 
+}
+
+.timer {
+    text-align: center;
+    color: #fff;
+    background-color: #ec8686;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.timer h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5em;
+}
+
+.tips {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #fff5f5;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
